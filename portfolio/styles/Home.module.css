@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.header{
+  width: 100%;
+  background-color: #020145;
+}
+
 .footer {
   display: flex;
   flex: 1;
