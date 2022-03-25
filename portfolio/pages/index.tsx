@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Portfolio Edison</title>
         <meta name="description" content="Portfolio de Edison Alcocer" />
@@ -14,6 +14,12 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <header className={styles.header}>
+          <Image
+            src="/public/reactimg.jpg"
+            height={40}
+            width={40}
+            alt="react"
+          />
           <h1 className={styles.title}>
             Welcome to Next.js
           </h1>
