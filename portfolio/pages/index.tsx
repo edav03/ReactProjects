@@ -14,23 +14,53 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <header className={styles.header}>
-          <Image
-            src="/public/reactimg.jpg"
-            height={40}
-            width={40}
-            alt="react"
-          />
           <h1 className={styles.title}>
-            Welcome to Next.js
+            <Image
+              src={"/imgs/react.png"}
+              height={40}
+              width={40}
+              alt="react"
+            />
+            {' '}
+            Edison Alcocer
+          </h1>
+          <h1 className={styles.description}>
+            <a href="https://github.com/edav03">
+              GitHub
+              <Image
+               src={"/imgs/github.png"}
+               height={40}
+               width={40}
+               alt="github"
+              />
+            </a>
+          </h1>
+          <h1 className={styles.description}>
+            <a href="">
+              {' '}
+              Projects
+              <Image
+               src={"/imgs/terminal.png"}
+               height={40}
+               width={40}
+               alt="github"
+              />
+            </a>
+          </h1>
+          <h1 className={styles.description}>
+            <a href="">
+              {' '}
+              Resume
+              <Image
+               src="/imgs/resume.png"
+               height={40}
+               width={40}
+               alt="github"
+              />
+            </a>
           </h1>
         </header>
         
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
