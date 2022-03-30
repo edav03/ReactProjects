@@ -3,24 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export const MyHeader = () => {
+const MyHeader = () => {
   return(
-    <p>Package Return</p>
-  )
-}
-
-const Home: NextPage = () => {
-  return (
-    <div>
-      <Head>
-        <title>Portfolio Edison</title>
-        <meta name="description" content="Portfolio de Edison Alcocer" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <header className={styles.header}>
-          {MyHeader}
+    <header className={styles.header}>
           <h1 className={styles.title}>
             <Image
               src={"/imgs/react.png"}
@@ -67,38 +52,35 @@ const Home: NextPage = () => {
             </a>
           </h1>
         </header>
-        
-        
-        <div className={styles.grid}>
-          
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-            
-          </a>
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+  )
+}
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+const Home: NextPage = () => {
+  return (
+    <div>
+      <Head>
+        <title>Portfolio Edison</title>
+        <meta name="description" content="Portfolio de Edison Alcocer" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <main className={styles.main}>
+        {MyHeader()}
+        
+      <div className={styles.body}>
+        <h1>Hi there, i’m Edison</h1>
+
+        <h3 className={styles.text}>
+          I’m a computer science student from Gandia, Spain. I love computer programming, i have knowledge of java and recently i’m trying React framework,  nextjs, and typescript.
+        </h3>
+
+        <Image
+          src="/imgs/user.jpg"
+          height={350}
+          width={350}
+          alt="Edison Alcocer"
+        />
+      </div>
       </main>
     </div>
   )
