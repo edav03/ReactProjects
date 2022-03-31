@@ -35,7 +35,7 @@ const MyHeader = () => {
                src={"/imgs/terminal.png"}
                height={40}
                width={40}
-               alt="github"
+               alt="edav03"
               />
             </a>
           </h1>
@@ -65,22 +65,39 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {MyHeader()}
         
-      <div className={styles.body}>
-        <h1>Hi there, i’m Edison</h1>
+        <MyHeader />
+        
+        <div className={styles.body}>
+          <div className={styles.text}>
+            <h1>Hi there, i’m Edison</h1>
 
-        <h3 className={styles.text}>
-          I’m a computer science student from Gandia, Spain. I love computer programming, i have knowledge of java and recently i’m trying React framework,  nextjs, and typescript.
-        </h3>
+            <h3>
+              I’m a computer science student from Gandia, Spain. I love computer programming, i have knowledge of java and recently i’m trying React framework,  nextjs, and typescript.
+            </h3>
+          </div>
 
-        <Image
-          src="/imgs/user.jpg"
-          height={350}
-          width={350}
-          alt="Edison Alcocer"
-        />
-      </div>
+          <div className={styles.img}>
+            <Image
+              src="/imgs/user.jpg"
+              height={350}
+              width={350}
+              alt="Edison Alcocer"
+            />
+          </div>
+        </div>
+        <div className={styles.footer}>
+          <h3>Made by Edison Alcocer</h3>
+        </div>
+        <div className={styles.img}>
+          <a href="https://github.com/edav03">GitHub</a>
+          <Image
+            src="/imgs/github.png"
+            width={40}
+            height={40}
+            alt="edav03"
+          />
+        </div>
       </main>
     </div>
   )
