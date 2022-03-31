@@ -7,15 +7,15 @@
 
 .header{
   width: auto;
-  height: 10%;
+  height: 7rem;
   background-color: rgba(2, 4, 21, 0.81);
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   line-height: 2;
   font-size: 1rem;
   text-align: inherit;
   margin: 0;
+  padding-right: 2%;
 }
 
 .title {
@@ -24,7 +24,6 @@
 }
 
 .description {
-  position: absolute;
   padding-left: 3%;
 }
 
@@ -36,16 +35,20 @@
   flex-direction: row;
 }
 
-.text{
-padding-right: 20%;
+.txt{
+  padding-right: 20%;
+  text-align: justify;
+}
+
+.img{
+  padding-right: 6%;
 }
 
 
 .footer {
   display: flex;
-  flex: 1;
+  flex-direction: column;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
   background-color: rgba(149, 158, 237, 0.52);
@@ -56,6 +59,15 @@ padding-right: 20%;
   align-items: center;
 }
 
-.img{
+@media (max-width: 1410px){
+  .header{
+    font-size: 0.7rem;
+  }
+}
 
+@media (max-width: 890px) {
+   .header{
+     height: 6rem;
+     font-size: 0.5rem;
+   }
 }

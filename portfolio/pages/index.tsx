@@ -2,58 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
-const MyHeader = () => {
-  return(
-    <header className={styles.header}>
-          <h1 className={styles.title}>
-            <Image
-              src={"/imgs/react.png"}
-              height={40}
-              width={40}
-              alt="react"
-            />
-            {' '}
-            Edison Alcocer
-          </h1>
-          <h1 className={styles.description}>
-            <a href="https://github.com/edav03">
-              GitHub
-              <Image
-               src={"/imgs/github.png"}
-               height={40}
-               width={40}
-               alt="github"
-              />
-            </a>
-          </h1>
-          <h1 className={styles.description}>
-            <a href="">
-              {' '}
-              Projects
-              <Image
-               src={"/imgs/terminal.png"}
-               height={40}
-               width={40}
-               alt="edav03"
-              />
-            </a>
-          </h1>
-          <h1 className={styles.description}>
-            <a href="">
-              {' '}
-              Resume
-              <Image
-               src="/imgs/resume.png"
-               height={40}
-               width={40}
-               alt="github"
-              />
-            </a>
-          </h1>
-        </header>
-  )
-}
+import MyHeader from '../components/MyHeader'
+import MyBody from '../components/MyBody'
+import MyFooter from '../components/MyFooter'
 
 const Home: NextPage = () => {
   return (
@@ -61,43 +12,17 @@ const Home: NextPage = () => {
       <Head>
         <title>Portfolio Edison</title>
         <meta name="description" content="Portfolio de Edison Alcocer" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/imgs/nextjs.png" />
       </Head>
 
       <main className={styles.main}>
         
         <MyHeader />
         
-        <div className={styles.body}>
-          <div className={styles.text}>
-            <h1>Hi there, i’m Edison</h1>
+        <MyBody />
 
-            <h3>
-              I’m a computer science student from Gandia, Spain. I love computer programming, i have knowledge of java and recently i’m trying React framework,  nextjs, and typescript.
-            </h3>
-          </div>
+        <MyFooter />
 
-          <div className={styles.img}>
-            <Image
-              src="/imgs/user.jpg"
-              height={350}
-              width={350}
-              alt="Edison Alcocer"
-            />
-          </div>
-        </div>
-        <div className={styles.footer}>
-          <h3>Made by Edison Alcocer</h3>
-        </div>
-        <div className={styles.img}>
-          <a href="https://github.com/edav03">GitHub</a>
-          <Image
-            src="/imgs/github.png"
-            width={40}
-            height={40}
-            alt="edav03"
-          />
-        </div>
       </main>
     </div>
   )
