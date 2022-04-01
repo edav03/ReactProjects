@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-const MyHeader = () => {
+const MyHeader = ({title} : {title?: string }) => {
   return(
     <header className={styles.header}>
           <h1 className={styles.title}>
@@ -12,7 +12,8 @@ const MyHeader = () => {
               alt="react"
             />
             {' '}
-            Edison Alcocer
+            {title}
+            {' | HOME'}
           </h1>
           <h1 className={styles.description}>
             <a href="https://github.com/edav03">

@@ -1,12 +1,15 @@
-import type { NextPage } from 'next'
+import { useState } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import MyHeader from '../components/MyHeader'
 import MyBody from '../components/MyBody'
 import MyFooter from '../components/MyFooter'
+import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
+
+  const [userName, setUserName] = useState<string>("Edison")
+
   return (
     <div>
       <Head>
@@ -17,7 +20,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         
-        <MyHeader />
+        <MyHeader title={userName}/>
         
         <MyBody />
 
