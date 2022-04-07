@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 const MyHeader = ({title} : {title?: string }) => {
   return(
@@ -27,7 +28,8 @@ const MyHeader = ({title} : {title?: string }) => {
             </a>
           </h1>
           <h1 className={styles.description}>
-            <a href="">
+            <Link href="/posts/projects">
+              <a>
               {' '}
               Projects
               <Image
@@ -36,7 +38,8 @@ const MyHeader = ({title} : {title?: string }) => {
                width={40}
                alt="edav03"
               />
-            </a>
+              </a>
+            </Link>
           </h1>
           <h1 className={styles.description}>
             <a href="">
