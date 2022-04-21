@@ -2,16 +2,11 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import MyHead from "../components/MyHead";
 import MyHeader from "../components/MyHeader";
-import InBody from "../components/InBody";
 import MyFooter from "../components/MyFooter";
 
-const HomeBody = () => {
-  return <></>;
-};
-
-const Home = () => {
+export const Projects = () => {
   const [userName, setUserName] = useState<string>("Edison");
-  const [currentPage, setCurrentPage] = useState<string>("HOME");
+  const [currentPage, setCurrentPage] = useState<string>("Projects");
 
   return (
     <div>
@@ -19,14 +14,10 @@ const Home = () => {
 
       <main className={styles.main}>
         <MyHeader userName={userName} currentPage={currentPage} />
-
-        <HomeBody />
-        <InBody />
-
         <MyFooter />
       </main>
     </div>
   );
 };
 
-export default Home;
+export default Projects;

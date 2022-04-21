@@ -10,21 +10,35 @@
   height: 7rem;
   background-color: rgba(2, 4, 21, 0.81);
   display: flex;
+  align-items: center;
   flex-direction: row;
   line-height: 2;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: inherit;
-  margin: 0;
-  padding-right: 2%;
 }
 
 .title {
   padding-left: 6%;
-  padding-right: 30%;
 }
 
 .description {
-  padding-left: 3%;
+  display: flex;
+  flex-direction: row;
+  margin: 65rem;
+}
+
+.descriptionHome{
+  top: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 15rem;
+}
+
+.descriptionLinks{
+  top: 10px;
+  display: flex;
+  justify-content: space-around;  
+  width: 10rem;
 }
 
 .body{
@@ -33,7 +47,7 @@
   padding-bottom: 13%;
   display: flex;
   flex-direction: row;
-  height: 40rem;
+  height: 42rem;
 }
 
 .txt{
@@ -58,6 +72,12 @@
 .footer a {
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1730px){
+  .description{
+    margin: 50%;
+  }
 }
 
 @media (max-width: 1410px){
