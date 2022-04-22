@@ -24,14 +24,14 @@
 .description {
   display: flex;
   flex-direction: row;
-  margin: 65rem;
+  margin-left: 58rem;
 }
 
 .descriptionHome{
   top: 10px;
   display: flex;
   justify-content: space-around;
-  width: 15rem;
+  width: 18rem;
 }
 
 .descriptionLinks{
@@ -39,24 +39,34 @@
   display: flex;
   justify-content: space-around;  
   width: 10rem;
+  margin-right: 18px;
 }
 
 .body{
-  padding-left: 6%;
-  padding-top: 13%;
-  padding-bottom: 13%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-flow: column wrap;
   height: 42rem;
 }
 
+.PrTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+
 .txt{
-  padding-right: 20%;
-  text-align: justify;
+  padding-left: 6%;
+  padding-top: 10%;
+  padding-bottom: 13%;
+  text-align:left
 }
 
 .img{
-  padding-right: 6%;
+  padding-top: 8%;
+  padding-bottom: 13%;
+  padding-left: 30%;
 }
 
 
@@ -70,19 +80,67 @@
 }
 
 .footer a {
-  justify-content: center;
   align-items: center;
 }
 
-@media (max-width: 1730px){
+@media(max-width: 1820px){
   .description{
-    margin: 50%;
+    margin-left: 50rem;
   }
 }
 
-@media (max-width: 1410px){
+@media(max-width: 1611px){
+  .description{
+    margin-left: 40rem;
+  }
+
+  .img{
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 1440px){
   .header{
     font-size: 0.7rem;
+  }
+
+  .description{
+    margin-left: 30rem;
+  }
+
+  .img{
+    padding-left: 10%;
+  }
+  
+}
+
+@media (max-width: 1260px){
+  .description{
+    margin-left: 20rem;
+  }
+}
+
+@media (max-width: 1008px){
+  .body{
+    height: 50rem;
+  }
+  .title{
+    display: none;
+  }
+
+  .description{
+    margin-left: 15%; 
+  }
+  .body{
+    flex-flow: column;
+  }
+
+  .txt{
+    padding-bottom: 0;
+  }
+
+  .img{
+    padding-left: 20%;
   }
 }
 
@@ -91,4 +149,13 @@
      height: 6rem;
      font-size: 0.5rem;
    }
+   
+   .descriptionHome{
+     display: none;
+   }
+
+   .description{
+    justify-content: center;
+    align-items: center;
+  }
 }
