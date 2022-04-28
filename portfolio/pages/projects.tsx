@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image"
 import styles from "../styles/Home.module.css";
 import MyHead from "../components/MyHead";
 import MyHeader from "../components/MyHeader";
@@ -9,6 +10,45 @@ export const ProjBody = () => {
     <div className={styles.body}>
 
       <h1 className={styles.PrTitle}>PROJECTS</h1>
+
+      <div className={styles.objs}>
+        <div className={styles.circles}>
+
+          <Image
+            src="/imgs/user.jpg"
+            height={200}
+            width={200}
+            alt="Future projects"
+          />
+
+          <h1 className={styles.text}>TEXT</h1>
+        </div>
+
+        <div className={styles.circles}>
+
+          <Image
+            src="/imgs/user.jpg"
+            height={200}
+            width={200}
+            alt="Future projects"
+          />
+
+          <h1 className={styles.text}>TEXT</h1>
+        </div>
+
+        <div className={styles.circles}>
+
+          <Image
+            src="/imgs/user.jpg"
+            height={200}
+            width={200}
+            alt="Future projects"
+          />
+
+          <h1 className={styles.text}>TEXT</h1>
+        </div>
+
+      </div>
       
     </div>
   )
