@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image"
+import Link from "next/link"
 import styles from "../styles/Home.module.css";
 import MyHead from "../components/MyHead";
 import MyHeader from "../components/MyHeader";
@@ -14,38 +15,44 @@ export const ProjBody = () => {
       <div className={styles.objs}>
         <div className={styles.circles}>
 
-          <Image
-            src="/imgs/user.jpg"
-            height={200}
-            width={200}
-            alt="Future projects"
-          />
+          <Link href="">
+            <Image
+              src="/imgs/user.jpg"
+              height={200}
+              width={200}
+              alt="Future projects"
+            />
+          </Link>
 
-          <h1 className={styles.text}>TEXT</h1>
+          <h1 className={styles.text}>CALCULADORA</h1>
         </div>
 
         <div className={styles.circles}>
 
-          <Image
-            src="/imgs/user.jpg"
-            height={200}
-            width={200}
-            alt="Future projects"
-          />
+          <Link href="">
+            <Image
+              src="/imgs/user.jpg"
+              height={200}
+              width={200}
+              alt="Future projects"
+            />
+          </Link>
 
-          <h1 className={styles.text}>TEXT</h1>
+          <h1 className={styles.text}>To Do</h1>
         </div>
 
         <div className={styles.circles}>
 
-          <Image
-            src="/imgs/user.jpg"
-            height={200}
-            width={200}
-            alt="Future projects"
-          />
+          <Link href="">
+            <Image
+              src="/imgs/user.jpg"
+              alt="Future projects"
+              height={200}
+              width={200}
+            />
+          </Link>
 
-          <h1 className={styles.text}>TEXT</h1>
+          <h1 className={styles.text}>LISTA</h1>
         </div>
 
       </div>

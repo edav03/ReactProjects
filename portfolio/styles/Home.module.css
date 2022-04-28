@@ -89,6 +89,7 @@
 .text{
   margin-top: 180px;
 }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -115,6 +116,12 @@
 
   .img{
     padding-left: 20%;
+  }
+
+  .circles{
+    margin-left: 60px;
+    height: 300px;
+    width: 300px;
   }
 }
 
