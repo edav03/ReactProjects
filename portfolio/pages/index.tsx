@@ -1,25 +1,24 @@
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
-import Image from "next/image"
+import Image from "next/image";
 import MyHead from "../components/MyHead";
 import MyHeader from "../components/MyHeader";
 import MyFooter from "../components/MyFooter";
 
 export const HomeBody = () => {
-  return(
-    <div className={styles.body}>
+  const salute = "Hi there, i'm Edison";
+  const description =
+    "I'm a computer science student from Gandia, Spain " +
+    "I love computer programming, i have knowledge of java and recently " +
+    "I'm trying React framework,  nextjs, and typescript.";
 
+  return (
+    <div className={styles.body}>
       <div className={styles.txt}>
-        <h1>Hi there, i'm Edison</h1>
-    
-        <h3>
-          I'm a computer science student from Gandia, Spain <br /><br />
-          I love computer programming, i have knowledge of java and recently <br /> <br />
-          i'm trying React framework,  nextjs, and typescript.
-        </h3>
-    
+        <h1>{salute}</h1>
+        <h3>{description}</h3>
       </div>
-    
+
       <div className={styles.img}>
         <Image
           src="/imgs/user.jpg"
@@ -28,9 +27,8 @@ export const HomeBody = () => {
           alt="Edison Alcocer"
         />
       </div>
-    
     </div>
-  )
+  );
 };
 
 const Home = () => {
