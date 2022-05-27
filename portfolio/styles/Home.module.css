@@ -211,9 +211,5 @@
   }
 }
 
-@media (max-width: 500px){
-  .main{
-    width: 500px;
-
-  }
-}
+/* @media (max-width: 500px){
+} */
