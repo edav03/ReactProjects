@@ -18,23 +18,25 @@ export const ProjBody = () => {
           <Link href="">
             <Image
               src="/imgs/user.jpg"
-              height={200}
-              width={200}
               alt="Future projects"
+              layout="fill"
+              sizes="10vw"
+              // className={styles.circleImgs}
             />
           </Link>
 
           <h1 className={styles.text}>CALCULADORA</h1>
         </div>
 
-        <div className={styles.circles}>
+        <div className={styles.circlesMain}>
 
           <Link href="">
             <Image
               src="/imgs/user.jpg"
-              height={200}
-              width={200}
               alt="Future projects"
+              // className={styles.circleImgs}
+              layout="fill"
+              sizes="10vw"
             />
           </Link>
 
@@ -47,8 +49,9 @@ export const ProjBody = () => {
             <Image
               src="/imgs/user.jpg"
               alt="Future projects"
-              height={200}
-              width={200}
+              className={styles.circleImgs}
+              layout="fill"
+              sizes="10vw"
             />
           </Link>
 

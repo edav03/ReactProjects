@@ -36,7 +36,7 @@ const Home = () => {
   const [currentPage, setCurrentPage] = useState<string>("HOME");
 
   return (
-    <div>
+    <div className="doc">
       <MyHead />
 
       <main className={styles.main}>
