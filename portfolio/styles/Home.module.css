@@ -50,16 +50,16 @@
 }
 
 .txt{
-  padding-left: 6%;
-  padding-top: 10%;
-  padding-bottom: 13%;
-  text-align:left
+  margin-left: 6%;
+  margin-top: 10%;
+  /* text-align: left */
+  width: 800px;
 }
 
 .img{
-  padding-top: 8%;
-  padding-bottom: 13%;
-  padding-left: 30%;
+  margin-top: 8%;
+  /* margin-bottom: 13%; */
+  margin-left: 27%;
 }
 
 .PrTitle{
@@ -107,6 +107,10 @@
   .description{
     margin-left: 50rem;
   }
+
+  .img{
+    margin-left: 18%;
+  }
 }
 
 @media(max-width: 1611px){
@@ -115,7 +119,7 @@
   }
 
   .img{
-    padding-left: 20%;
+    margin-left: 12%;
   }
 
   .circles{
@@ -131,11 +135,15 @@
   }
 
   .description{
-    margin-left: 30rem;
+    margin-left: 27rem;
+  }
+
+  .txt{
+    width: 750px;
   }
 
   .img{
-    padding-left: 10%;
+    margin-left: 5%;
   }
   
 }
@@ -144,30 +152,39 @@
   .description{
     margin-left: 20rem;
   }
+
+  .txt{
+    width: 600px;
+  }
 }
 
 @media (max-width: 1008px){
+
   .body{
     height: 50rem;
   }
+
   .title{
     display: none;
   }
 
   .description{
-    margin-left: 15%; 
+    margin-left: 230px; 
   }
+
   .body{
     flex-flow: column;
   }
 
   .txt{
-    padding-bottom: 0;
+    margin-left: 60px;
+    width: 900px;
   }
 
   .img{
-    padding-left: 20%;
+    margin-left: 300px;
   }
+
 }
 
 @media (max-width: 890px) {
@@ -176,12 +193,27 @@
      font-size: 0.5rem;
    }
    
-   .descriptionHome{
-     display: none;
+   .description{
+     margin-left: 200px;
+   }
+
+   .txt{
+     width: 800px;
+   }
+
+   .img{
+     margin-left: 250px;
    }
 
    .description{
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 500px){
+  .main{
+    width: 500px;
+
   }
 }
