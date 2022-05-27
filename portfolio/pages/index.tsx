@@ -21,7 +21,7 @@ export const HomeBody = () => {
 
       <div className={styles.img}>
         <Image
-          src="/imgs/user.jpg"
+          src="/imgs/edison2.jpg"
           height={350}
           width={350}
           alt="Edison Alcocer"
