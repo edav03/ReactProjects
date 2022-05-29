@@ -9,7 +9,7 @@ export const HomeBody = () => {
   const salute = "Hi there, i'm Edison";
   const description =
     "I'm a computer science student from Gandia, Spain " +
-    "I love computer programming, i have knowledge of java and recently " +
+    "I love computer programming, I programm fluently in Java and recently " +
     "I'm trying React framework,  nextjs, and typescript.";
 
   return (
@@ -21,10 +21,11 @@ export const HomeBody = () => {
 
       <div className={styles.img}>
         <Image
-          src="/imgs/edison2.jpg"
-          height={350}
-          width={350}
+          src="/imgs/edison.jpg"
           alt="Edison Alcocer"
+          layout="responsive"
+          width={350}
+          height={350}
         />
       </div>
     </div>

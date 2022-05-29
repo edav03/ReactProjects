@@ -17,45 +17,45 @@ export const ProjBody = () => {
 
           <Link href="">
             <Image
-              src="/imgs/user.jpg"
+              src="/imgs/calculator.png"
               alt="Future projects"
-              layout="fill"
-              sizes="10vw"
-              // className={styles.circleImgs}
+              layout="responsive"
+              width={200}
+              height={200}
             />
           </Link>
 
-          <h1 className={styles.text}>CALCULADORA</h1>
+          <h1 className={styles.text}>Calculator</h1>
         </div>
 
         <div className={styles.circlesMain}>
 
           <Link href="">
             <Image
-              src="/imgs/user.jpg"
+              src="/imgs/todo.png"
               alt="Future projects"
-              // className={styles.circleImgs}
-              layout="fill"
-              sizes="10vw"
+              layout="responsive"
+              width={100}
+              height={100}
             />
           </Link>
 
-          <h1 className={styles.text}>To Do</h1>
+          <h1 className={styles.textMain}>To Do</h1>
         </div>
 
         <div className={styles.circles}>
 
           <Link href="">
             <Image
-              src="/imgs/user.jpg"
+              src="/imgs/list.png"
               alt="Future projects"
-              className={styles.circleImgs}
-              layout="fill"
-              sizes="10vw"
+              layout="responsive"
+              width={200}
+              height={200}
             />
           </Link>
 
-          <h1 className={styles.text}>LISTA</h1>
+          <h1 className={styles.text}>List</h1>
         </div>
 
       </div>

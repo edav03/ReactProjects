@@ -5,8 +5,8 @@ const MyFooter = () => {
     return(
         <div className={styles.footer}>
 
-          <h3>Made by Edison Alcocer</h3>
-
+          <h3>Made By Edison Alcocer</h3>
+          
           <a href="https://github.com/edav03">GitHub
             <Image
               src="/imgs/github.png"
