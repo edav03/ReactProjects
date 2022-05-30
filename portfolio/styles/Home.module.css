@@ -263,9 +263,11 @@
   .title{
     left: 20px;
   }
+  
   .body{
-    height: 35rem;
+    height: 65rem;
   }
+  
   .txt{
     width: 300px;
     height: 150px;
