@@ -1,20 +1,18 @@
 import { useState } from "react";
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import MyHead from "../components/MyHead";
 import MyHeader from "../components/MyHeader";
 import MyFooter from "../components/MyFooter";
 
 export const ProjBody = () => {
-  return(
+  return (
     <div className={styles.body}>
-
       <h1 className={styles.PrTitle}>PROJECTS</h1>
 
       <div className={styles.objs}>
         <div className={styles.circles}>
-
           <Link href="">
             <Image
               src="/imgs/calculator.png"
@@ -29,7 +27,6 @@ export const ProjBody = () => {
         </div>
 
         <div className={styles.circlesMain}>
-
           <Link href="">
             <Image
               src="/imgs/todo.png"
@@ -44,7 +41,6 @@ export const ProjBody = () => {
         </div>
 
         <div className={styles.circles}>
-
           <Link href="">
             <Image
               src="/imgs/list.png"
@@ -57,12 +53,10 @@ export const ProjBody = () => {
 
           <h1 className={styles.text}>List</h1>
         </div>
-
       </div>
-      
     </div>
-  )
-}
+  );
+};
 
 export const Projects = () => {
   const [userName, setUserName] = useState<string>("Edison");
@@ -77,7 +71,6 @@ export const Projects = () => {
         <ProjBody />
         <MyFooter />
       </main>
-
     </div>
   );
 };

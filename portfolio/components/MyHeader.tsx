@@ -20,14 +20,13 @@ const MyHeader = (args: IMyHeader) => {
       </h1>
 
       <h1 className={styles.description}>
-
         <Link href="/projects">
           <a className={styles.descriptionLinks}>
             Projects
             <Image
               src={"/imgs/terminal.png"}
-              height="40"
-              width="40"
+              height={10}
+              width={50}
               alt="edav03"
             />
           </a>
@@ -35,11 +34,7 @@ const MyHeader = (args: IMyHeader) => {
 
         <a className={styles.descriptionLinks}>
           Resume
-          <Image
-            src="/imgs/resume.png" 
-            height={40} 
-            width={40} 
-            alt="github" />
+          <Image src="/imgs/resume.png" height={10} width={50} alt="github" />
         </a>
 
         <a
@@ -49,13 +44,8 @@ const MyHeader = (args: IMyHeader) => {
           rel="noreferrer"
         >
           GitHub
-          <Image 
-            src={"/imgs/github.png"} 
-            height={40} 
-            width={40} 
-            alt="github" />
+          <Image src={"/imgs/github.png"} height={10} width={50} alt="github" />
         </a>
-
       </h1>
     </header>
   );

@@ -1,23 +1,17 @@
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 const MyFooter = () => {
-    return(
-        <div className={styles.footer}>
+  return (
+    <div className={styles.footer}>
+      <h3>Made By Edison Alcocer</h3>
 
-          <h3>Made By Edison Alcocer</h3>
-          
-          <a href="https://github.com/edav03">GitHub
-            <Image
-              src="/imgs/github.png"
-              width={20}
-              height={20}
-              alt="edav03"
-            />
-          </a>
+      <a href="https://github.com/edav03" target="_blank" rel="noreferrer">
+        GitHub
+        <Image src="/imgs/github.png" width={20} height={20} alt="edav03" />
+      </a>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-
-export default MyFooter
+export default MyFooter;
