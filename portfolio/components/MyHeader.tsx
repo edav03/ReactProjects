@@ -32,10 +32,12 @@ const MyHeader = (args: IMyHeader) => {
           </a>
         </Link>
 
-        <a className={styles.descriptionLinks}>
-          Resume
-          <Image src="/imgs/resume.png" height={10} width={50} alt="github" />
-        </a>
+        <Link href="/resume">
+          <a className={styles.descriptionLinks}>
+            Resume
+            <Image src="/imgs/resume.png" height={10} width={50} alt="github" />
+          </a>
+        </Link>
 
         <a
           className={styles.descriptionLinks}

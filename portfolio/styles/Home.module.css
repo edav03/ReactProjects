@@ -69,7 +69,7 @@
 .PrTitle{
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 40px;
 }
 
 .objs{
@@ -101,6 +101,14 @@
 .circleImgs{
   width: 200px;
   height: 200px;
+}
+
+.nav{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 120px;
+  margin-right: 120px;
+  text-align: center;
 }
 
 .text{
