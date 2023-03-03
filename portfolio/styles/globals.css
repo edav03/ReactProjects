@@ -1,14 +1,23 @@
-html,
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Lora;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
 * {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
   box-sizing: border-box;
+  font-family: Lobster;
 }

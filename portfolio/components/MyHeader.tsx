@@ -13,7 +13,7 @@ const MyHeader = (args: IMyHeader) => {
       <h1 className={styles.title}>
         <Link href="/">
           <a className={styles.descriptionHome}>
-            <Image src={"/imgs/react.png"} height={40} width={40} alt="react" />
+            <Image src={"/imgs/react.png"} height={40} width={60} alt="react" />
             {`${args.userName} | ${args.currentPage}`}
           </a>
         </Link>

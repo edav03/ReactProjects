@@ -19,7 +19,13 @@
 
 .title {
   position: absolute;
-  left: 50px
+  left: 50px;
+}
+
+.title:hover{
+  transition: font-size 1s;
+  font-size: 2rem;
+  text-decoration: underline;
 }
 
 .description {
@@ -35,12 +41,22 @@
   width: 18rem;
 }
 
+.descriptionHome:hover{
+  width:22rem;
+}
+
 .descriptionLinks{
   top: 10px;
   display: flex;
   justify-content: space-around;  
   width: 10rem;
   margin-right: 18px;
+}
+
+.descriptionLinks:hover{
+  transition: font-size 0.5s ease;
+  font-size: 1.7rem;
+  text-decoration: underline;
 }
 
 .body{
@@ -64,6 +80,14 @@
   position: absolute;
   right: 60px;
   margin-top: 8%;
+  border: 5px solid black;
+}
+
+.img:active{
+  transition: all 1s ease;
+  width: 450px;
+  height: 450px;
+  transform: translate(-30px, -50px);
 }
 
 .PrTitle{
@@ -90,7 +114,8 @@
   height: 400px;
   width: 400px;
   background-color: #9D9D9D;
-  border-radius: 50%;
+  border-radius: 50%;  transform: translateX(-30px);
+  transform: translateY(-30px);
   margin-top: 20px;
   margin-left: 120px;
   margin-right: 120px;
@@ -130,6 +155,15 @@
 
 .footer a {
   align-items: center;
+}
+
+.footer:hover{
+  transition: font-size 1s ease;
+  font-size: 1.5rem;
+}
+
+.footer > a:hover{
+  text-decoration: underline;
 }
 
 @media(max-width: 1611px){
